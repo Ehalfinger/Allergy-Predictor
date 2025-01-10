@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Resume{% endblock %}
+
+{% block content %}
+    <h1>My Resume</h1>
+    
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+            <p><strong>Hanna Emilia Halfinger</strong><br>
+            Londonderry, NH 03053<br>
+            603-425-8850<br>
+            ehalfinger@icloud.com</p>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/profile_picture.jpg') }}" alt="Hanna Emilia Halfinger" style="max-width: 150px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+    </div>
+
+    <p><strong>Professional Summary</strong><br>
+    Dedicated and detail-oriented data science graduate student with expertise in statistical analysis, Python, R, SQL, and data visualization. Skilled at leveraging data-driven insights to solve complex business challenges and improve organizational decision-making. Passionate about research, data storytelling, and delivering innovative solutions to real-world problems. Fluent in Hungarian and committed to continuous learning and professional growth.</p>
+
+    <p><strong>Education</strong></p>
+    <p><strong>Master of Science in Data Science</strong><br>
+    Eastern University — Expected Graduation: December 2024<br>
+    - Advanced coursework in machine learning, statistical modeling, and data visualization.<br>
+    - Current capstone project focuses on developing predictive models for allergies using socioeconomic data, leveraging Flask and AWS for web app deployment.</p>
+
+    <p><strong>Bachelor of Science in Business Administration, Marketing Concentration</strong><br>
+    Southern New Hampshire University — 2021–2023<br>
+    - Graduated with distinction; emphasis on data-driven marketing strategies and consumer behavior analysis.</p>
+
+    <p><strong>Dual Enrollment Program</strong><br>
+    Nashua & Manchester Community College — 2019–2021<br>
+    - Completed over 60 college credits while attending high school.</p>
+
+    <p><strong>Technical Skills</strong><br>
+    - Programming & Data Tools: Python, R, SQL, Flask, AWS, Tableau, Microsoft Excel<br>
+    - Data Science Expertise: Statistical analysis, predictive modeling, data cleaning, feature engineering<br>
+    - Soft Skills: Problem-solving, analytical thinking, strong work ethic, effective communication, teamwork<br>
+    - Languages: Fluent in Hungarian</p>
+
+    <p><strong>Professional Experience</strong></p>
+    <p><strong>Customer Success Coordinator</strong><br>
+    Reliable Respiratory — January 2024 – May 2024<br>
+    - Facilitated communication between patients, insurance companies, and medical staff to ensure timely documentation and approval of critical medical services.<br>
+    - Processed patient orders and maintained accurate medical records, improving service efficiency.</p>
+
+    <p><strong>Server</strong><br>
+    Sky Meadow Country Club — November 2021 – Present<br>
+    - Delivered high-quality service across dining, event hosting, and bar operations, consistently exceeding member expectations.<br>
+    - Developed strong client relationships by anticipating needs in a fast-paced environment.</p>
+</div>
+{% endblock %}
